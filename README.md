@@ -1,36 +1,25 @@
 
-#### Machine Learning - Naive Bayes
+#### Machine Learning - Tensor Flow
 
-# CreditCard--Fraud-Dection
+# ImageRecognition--ComputerVision
 
-![fb](images/fd8.png)
+![fb](images/ir9.png)
 
 
 # Background
 
-Credit card companies need to have the ability to recognize fraudulent credit card transactions so that customers are not charged for items that they did not purchase.
-
-Datasets contains transactions made by credit cards in September 2013 by european cardholders. This dataset presents transactions that occurred in two days, where we have 492 frauds out of 284,807 transactions. The dataset is highly unbalanced, the positive class (frauds) account for 0.172% of all transactions.
-
-The data contains only numerical input variables which are the result of a PCA transformation. Unfortunately, due to confidentiality issues, we cannot provide the original features and more background information about the data.
-
-* Input Features: V1, V2, ... V28 are the principal components obtained with PCA, the only features which have not been transformed with PCA are 'Time' and 'Amount'. 
-* Feature 'Time' contains the seconds elapsed between each transaction and the first transaction in the dataset. 
-* The feature 'Amount' is the transaction Amount, this feature can be used for example-dependant cost-senstive learning.
-* Output: 1 in case of fraud and 0 otherwise.
-
-* Link to the dataset: https://www.kaggle.com/mlg-ulb/creditcardfraud/home
+Practicing using the Tensor-Flow library to Predict animal images.
 
 # Goals
 
-* Import the data set
-* Transform the data
-* Split the data in Train and Test
-* Train and Test the model in the data set
-* Visualize data points
-* Get best accuracy
-* Improve model as needed
-* Discover if there is a potentialy risk of fraud
+* Import Dependencies
+* Load the VGG19 model
+* Define default image size for VGG19 and Xception
+* Load the image and resize to default image size
+* Preprocess image for model prediction
+* Handles scaling and normalization for VGG19 and Xception
+* Make Predctions
+* Refactor above steps into reusable function
 
 
 
@@ -48,40 +37,44 @@ Import the data set and visualize the data
 
 * Data set
 #  
-![fb](images/fd1.png)
+![fb](images/ir1.png)
 
 * Describe the data
 #  
-![fb](images/fd2.png)
+![fb](images/ir2.png)
 
 Creating 2 variables
 * negative, no fraud
 * positive, fraud
 #  
-![fb](images/fd3.png)
+![fb](images/ir3.png)
 
 Visualize the Count of Fraud and NoFraud
 * Find out that the data is very unbalanced
 #  
-![fb](images/fd4.png)
+![fb](images/ir4.png)
 
 
 Heat Map
 #  
-![fb](images/fd5.png)
+![fb](images/ir5.png)
 
 Kernel density estimation (KDE) is a non-parametric way to estimate the probability density function of a random variable.
 #  
-![fb](images/fd6.png)
+![fb](images/ir6.png)
 
 * Re-shaping the values 
 * Evaluating the Model
 #  
-![fb](images/fd7.png)
+![fb](images/ir7.png)
 
 
 Final Model represented by Confunsion Matrix
 #  
-![fb](images/fd8.png)
+![fb](images/ir8.png)
 
+Final Model represented by Confunsion Matrix
+#  
+
+![fb](images/ir9.png)
 
