@@ -33,47 +33,48 @@ Open Google Colab https://colab.research.google.com/
 
 # Proccess
 
-Import the data set and visualize the data
+Import the Dependencies, Tensor flow
 
-* Data set
+* VGG19 model
 #  
 ![fb](images/ir1.png)
 
-* Describe the data
+* Load the image and resize to default image size
 #  
 ![fb](images/ir2.png)
 
-Creating 2 variables
-* negative, no fraud
-* positive, fraud
+* Scaling and normalization for VGG19
 #  
 ![fb](images/ir3.png)
 
-Visualize the Count of Fraud and NoFraud
-* Find out that the data is very unbalanced
+
+* Making predictions
 #  
 ![fb](images/ir4.png)
 
 
-Heat Map
+* Create a reusable function
 #  
 ![fb](images/ir5.png)
 
-Kernel density estimation (KDE) is a non-parametric way to estimate the probability density function of a random variable.
+* Predicting a Corgis(dog), image.
 #  
 ![fb](images/ir6.png)
 
-* Re-shaping the values 
-* Evaluating the Model
+Import Dependencies
+* Load the Xception model
+
 #  
 ![fb](images/ir7.png)
 
 
-Final Model represented by Confunsion Matrix
+* Load the image and resize to the input dimensions that Xception
+
 #  
 ![fb](images/ir8.png)
 
-Final Model represented by Confunsion Matrix
+* Refactor above steps into reusable function
+
 #  
 
 ![fb](images/ir9.png)
